@@ -15,17 +15,15 @@ function BankAccount(name, initial_deposit) {
 
 
 
-
   
 
 // UI logic
 $(document).ready(function() {
   $("form#register").submit(function(event) {
     event.preventDefault();
-    const title = $("#name").val();
-    const time = parseInt($("#deposit").val());
-    const age = parseInt($("#question3").val());
-    let matrix = new Movie("Matrix", ["1:00pm", "3:00pm", "8:00pm"], true);
+    const name = $("#name").val();
+    const initdepot = parseInt($("#deposit").val());
+    let  = new Movie("Matrix", ["1:00pm", "3:00pm", "8:00pm"], true);
     let madagascar = new Movie("Madagascar", ["1:00pm", "8:00pm"], false);
     let incredibles = new Movie("The Incredibles", ["1:00pm", "3:00pm", "8:00pm"], true);
     $("#total-due").html(Discount(time, age));
